@@ -48,7 +48,7 @@ def count_word_in_column(file_path: pathlib.Path, column_letter: str, word: str)
 def process_excel_file():
     """Read an Excel file, count occurrences of 'R' in a specific column, and save the result."""
     
-    input_file = pathlib.Path(FETCHED_DATA_DIR, "NHL Goalies.xlsx")
+    input_file = pathlib.Path(FETCHED_DATA_DIR, "NHL_Goalies.xlsx")
 
     output_file = pathlib.Path(PROCESSED_DIR, "excel_feedback_R_count.txt")
 

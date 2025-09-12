@@ -1,5 +1,5 @@
 """
-Process a CSV file on 2020 Happiness ratings by country to analyze the `Ladder score` column and save statistics.
+Process a CSV file on 3 types of irisis to analyze the `sepal_length` column and save statistics.
 """
 
 #####################################
@@ -28,8 +28,6 @@ PROCESSED_DIR: str = "tmartin_processed"
 #####################################
 # Define Functions
 #####################################
-
-# TODO: Add or replace this with a function that reads and processes your CSV file
 
 def analyze_sepal_length(file_path: pathlib.Path) -> dict:
     """Analyze the sepal_length column to calculate min, max, mean, and stdev."""
@@ -66,8 +64,6 @@ def process_csv_file():
     
     output_file = pathlib.Path(PROCESSED_DIR, "iris_sepal_length_stats.txt")
     
-    # TODO: Call your new function to process YOUR CSV file
-    # TODO: Create a new local variable to store the result of the function call
     stats = analyze_sepal_length(input_file)
 
     # Create the output directory if it doesn't exist

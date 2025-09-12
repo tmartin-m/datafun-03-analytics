@@ -92,9 +92,9 @@ def main():
     """
     Main function to demonstrate fetching JSON data.
     """
-    json_url = 'http://api.open-notify.org/astros.json'
+    json_url = 'https://raw.githubusercontent.com/tmartin-m/delete-me/refs/heads/main/house_price_parquet.json'
     logger.info("Starting JSON fetch demonstration...")
-    fetch_json_file(FETCHED_DATA_DIR, "astros.json", json_url)
+    fetch_json_file(FETCHED_DATA_DIR, "house_price_parquet.json", json_url)
 
 #####################################
 # Conditional Execution
