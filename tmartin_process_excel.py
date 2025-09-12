@@ -24,9 +24,8 @@ from utils_logger import logger
 # Declare Global Variables
 #####################################
 
-# TODO: Replace with the names of your folders
-FETCHED_DATA_DIR: str = "example_data"
-PROCESSED_DIR: str = "example_processed"
+FETCHED_DATA_DIR: str = "tmartin_data"
+PROCESSED_DIR: str = "tmartin_processed"
 
 #####################################
 # Define Functions
@@ -47,19 +46,15 @@ def count_word_in_column(file_path: pathlib.Path, column_letter: str, word: str)
         return 0
 
 def process_excel_file():
-    """Read an Excel file, count occurrences of 'GitHub' in a specific column, and save the result."""
+    """Read an Excel file, count occurrences of 'R' in a specific column, and save the result."""
     
-    # TODO: Replace with path to your Excel data file
-    input_file = pathlib.Path(FETCHED_DATA_DIR, "Feedback.xlsx")
+    input_file = pathlib.Path(FETCHED_DATA_DIR, "NHL Goalies.xlsx")
 
-    # TODO: Replace with path to your Excel processed file
-    output_file = pathlib.Path(PROCESSED_DIR, "excel_feedback_github_count.txt")
+    output_file = pathlib.Path(PROCESSED_DIR, "excel_feedback_R_count.txt")
 
-    # TODO: Replace with the appropriate column letter for your Excel data file
-    column_to_check = "A"  
+    column_to_check = "B"  
 
-    # TODO: Replace with the word you want to count from your Excel file
-    word_to_count = "GitHub"
+    word_to_count = "R"
 
     # Call the function to count occurrences of the word in the specified column
     word_count = count_word_in_column(input_file, column_to_check, word_to_count)
@@ -69,7 +64,6 @@ def process_excel_file():
     
     # Open the output file in write mode and write the results
     with output_file.open('w') as file:
-        # TODO: Update the output to describe your results
         file.write(f"Occurrences of '{word_to_count}' in column {column_to_check}: {word_count}\n")
     
     # Log the processing of the Excel file    
