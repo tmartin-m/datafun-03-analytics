@@ -93,7 +93,7 @@ def main():
     """
     Main function to demonstrate fetching Excel data.
     """
-    excel_url = ''
+    excel_url = 'https://raw.githubusercontent.com/tmartin-m/delete-me/refs/heads/main/NHL_Goalies.xlsx'
     logger.info("Starting Excel fetch demonstration...")
     fetch_excel_file(FETCHED_DATA_DIR, "NHL_Goalies.xlsx", excel_url)
 

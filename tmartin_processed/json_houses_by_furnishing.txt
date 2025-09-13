@@ -1,0 +1,4 @@
+Houses by Furnishing Status:
+furnished: 140
+semi-furnished: 227
+unfurnished: 178
