@@ -93,7 +93,7 @@ def main():
     """
     Main function to demonstrate fetching text data.
     """
-    txt_url = ''
+    txt_url = 'https://raw.githubusercontent.com/tmartin-m/delete-me/refs/heads/main/song_lyrics.txt'
     logger.info("Starting text fetch demonstration...")
     fetch_txt_file(FETCHED_DATA_DIR, "song_lyrics.txt", txt_url)
 
