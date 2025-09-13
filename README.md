@@ -58,5 +58,15 @@ https://github.com/denisecase/pro-analytics-01/blob/main/01-machine-setup/MACHIN
 https://www.stepsize.com/blog/best-vs-code-extensions-to-handle-todos
 
 # Example Repo
+https://github.com/denisecase/datafun-03-analytics
+
+# Trouble Shooting
+If you see the error No module named `requests`:
+
+The requests module is an external module (that is not part of the Python Standard Library) and you must install it into your active local project virtual environment. Use the commands provided to create your project virtual environment in the .venv folder and activate it. Then use the commands provided to install the requests module into your .venv. 
+
+Once installed into .venv, you can import an external module like requests in your Python files:
+
+import requests 
 
 
